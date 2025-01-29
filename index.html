@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    
+    <!-- Estilos CSS para mejorar el diseño -->
+    <style>
+        /* Estilos generales del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Contenedor principal para centrar la calculadora */
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: auto;
+        }
+
+        /* Estilo del título */
+        h1 {
+            color: #333;
+        }
+
+        /* Estilo de los campos de entrada */
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Estilo de los botones */
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 120px;
+        }
+
+        /* Efecto hover al pasar el mouse sobre los botones */
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilo del resultado */
+        #resultado {
+            font-weight: bold;
+            margin-top: 15px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor principal de la calculadora -->
+    <div class="container">
+        <h1>Calculadora Básica</h1>
+        
+        <p>Ingresa dos números:</p>
+        
+        <!-- Campos de entrada para los números -->
+        <input id="numero1" type="number" placeholder="Número 1">
+        <input id="numero2" type="number" placeholder="Número 2">
+        <br>
+
+        <!-- Botones para realizar las operaciones matemáticas -->
+        <button id="sumar">Sumar</button>
+        <button id="restar">Restar</button>
+        <br>
+        <button id="multiplicar">Multiplicar</button>
+        <button id="dividir">Dividir</button>
+
+        <!-- Sección donde se mostrará el resultado -->
+        <p id="resultado">Resultado: </p>
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
